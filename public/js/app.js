@@ -1,12 +1,11 @@
-console.log('guy its working')
 
 
 
 
 const weatherForm = document.querySelector('form');
 const submitButton = document.querySelector('input')
-const errorMessage = document.querySelector('#error-message');
 const forecastMessage = document.querySelector('#forecast-message')
+const errorMessage = document.querySelector('#error-message');
 
 
 
@@ -18,7 +17,7 @@ weatherForm.addEventListener('submit', (e)=>{
 
     errorMessage.textContent = 'Loading..'
     forecastMessage.textContent = ''
-    
+
     fetch(`http://localhost:3000/weather?address=${location}`).then( (response)=>{
         
     response.json().then((data)=>{
