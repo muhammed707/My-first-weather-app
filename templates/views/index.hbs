@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,13 @@
     <div class="main-content">
          {{>header}}
             <p>Search here </p>
-         <form action="">
-             <input type="search" name="" id="">
-             <button> search </button>
+            <div class="wrap">
+                 <form action="" class="search">
+             <input type="search" name="" id="" class="searchTerm">
+             <button class="searchButton"> <i class="fa fa-search"></i> </button>
          </form>
+            </div>
+        
          <div>
              <p id="error-message"> </p>
              <p id="forecast-message">  </p>

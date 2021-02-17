@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback)=>{
         if( response.body.message){
             callback('cant get forecast data try another search', undefined);
         }else{
-            callback(undefined, `the temprature is ${response.body.main.temp} the Weather is ${response.body.weather[1]}`)
+            callback(undefined, `the temprature is ${response.body.main.temp} with ${response.body.weather[0].description}`)
         }
     })
 }
